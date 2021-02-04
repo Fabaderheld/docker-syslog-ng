@@ -9,4 +9,4 @@ EXPOSE 514/UDP
 EXPOSE 601/TCP 
 
 VOLUME [ "/config" ]
-ENTRYPOINT [ "syslog-ng", "-Fevd", "--no-caps", "-f", "/config/syslog-ng.conf" ]
+ENTRYPOINT [ "syslog-ng", "-Fevd", "--no-caps", "--cfgfile=/config/syslog-ng.conf" ]
